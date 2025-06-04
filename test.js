@@ -7,7 +7,7 @@ const {chromium} = require('playwright'); // Importa o navegador Chromium do Pla
     const context = await browser.newContext() // Cria um novo contexto de navegação (como uma janela separada)
     //const page = await context.newPage() // Abre uma nova aba (página) dentro do contexto criado
     const page = await browser.newPage() // Alternativa: cria uma nova aba diretamente no navegador (sem contexto)
-    await page.goto('https://www.jw.org/en/') // Acessa o site especificado
+    await page.goto('https://pomofocus.io/') // Acessa o site especificado
     await page.screenshot({path: `todo.png`}) // Tira um screenshot da página e salva com o nome "todo.png"
     await browser.close() // Fecha o navegador após a execução
 })()
