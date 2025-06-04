@@ -1,10 +1,8 @@
-const { chromium } = require('playwright');
-
-const { chromium } = require('playwright');
+const {chromium} = require('playwright');
 
 // -- CT002 Interacting with elements -- //
 
-(async () => {
+/* (async () => {
     const browser = await chromium.launch({ headless: false, slowMo: 50 })// Inicia o navegador com interface visível e atraso de 50ms entre ações
     const context = await browser.newContext();// Cria um novo contexto de navegação isolado
     const page = await context.newPage();// Abre uma nova aba/página dentro do contexto
@@ -26,21 +24,20 @@ const { chromium } = require('playwright');
     // await page.dblclick('form >> "Sign in"');//Executa clique duplo no botão "Sign in"
     // await page.focus('form >> "Sign in"');// Dá foco no botão "Sign in" como se fosse via Tab
     // await page.dblclick('form >> "Sign in"')//Outro exemplo de clique duplo
-});
+}); */
+
 
 // -- CT003 Interacting with elements jw -- //
-
 (async () => {
-    const browser = await chromium.launch({ headless: false, slowMo: 50 })
+    const browser = await chromium.launch({ headless: false, slowMo: 90 })
     const context = await browser.newContext();
     const page = await context.newPage();
 
     await page.goto('https://www.jw.org/en/');
-    const signIn = await page.fill('input[type="text"]', 'Dead');
-    await signIn.click();
-    
+    await page.fill('input[type="text"]', 'Dead');
+    await page.press('input[type="text"]', 'Enter');
     await browser.close();
-});
+})()
 
 /*
 (async() => {
