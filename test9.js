@@ -1,6 +1,4 @@
-// -- TRABALHANDO COM MÚLTIPLAS PÁGINAS -- //
-
-                          // TERMINAR CDG //
+// -- TRABALHANDO COM MÚLTIPLAS PÁGINAS/POPUP/USERS -- //
 
 const { chromium } = require('playwright');
 
@@ -17,6 +15,45 @@ const { chromium } = require('playwright');
 
     console.log(await page.title())
     console.log(await newPage.title())
+
+    await browser.close()
+})()
+
+
+(async () => {
+    const browser = await chromium.launch()
+
+    const userContext = await browser.newContext()
+    const adminContext = await browser.newContext()
+
+    await browser.close()
+})()
+
+(async () => {
+    const browser = await chromium.launch()
+    const context = await browser.newContext()
+    const page = await context.newPage()
+
+    // ....
+    
+    const [popup] = await Promise.all([
+        page.waitForEvent('popup'),
+        page.click('#open')    // Opens a popup
+    ])
+    
+    // ....
+
+    await browser.close()
+})()
+
+const { chromium } = require('playwright');
+
+(async () => {
+    const browser = await chromium.launch()
+    const context = await browser.newContext()
+
+    const pageOne = await context.newPage()
+    const pageTwo = await context.newPage()
 
     await browser.close()
 })()
