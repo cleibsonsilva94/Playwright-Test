@@ -1,7 +1,5 @@
 const {chromium} = require('playwright'); // Importa o navegador Chromium do Playwright
 
-// -- CT001 Open the browser and take a screenshot -- //
-
 (async() => {
     const browser = await chromium.launch({headless: false}) // Inicia o navegador Chromium em modo visível (não headless)
     const context = await browser.newContext() // Cria um novo contexto de navegação (como uma janela separada)

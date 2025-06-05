@@ -1,7 +1,5 @@
 const {chromium} = require('playwright');
 
-// -- CT002 Interacting with elements -- //
-
 (async () => {
     const browser = await chromium.launch({ headless: false, slowMo: 90
  })// Inicia o navegador com interface visível e atraso de 50ms entre ações
