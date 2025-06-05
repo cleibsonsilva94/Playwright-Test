@@ -24,8 +24,13 @@ const expect = require('expect');
   const page = await context.newPage();
 
   await page.goto('https://www.jw.org/en/');
+  await page.reload();
   await page.fill('input[type="text"]', 'Dead');
   await page.press('input[type="text"]', 'Enter');
+  await page.waitForTimeout(5000);
+  await page.goBack();
+  await page.waitForTimeout(5000);
+  await page.goForward();
   await page.waitForTimeout(5000);
 
   const result = await page.locator('text=What Hope for the Dead?').first().isVisible();
