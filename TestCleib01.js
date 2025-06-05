@@ -17,7 +17,7 @@ const expect = require('expect');
 })();
 */
 
-// -- CT002 Validating research results -- //
+// -- CT002 Validating research results and applying many functions -- //
 (async () => {
   const browser = await chromium.launch({ headless: false, slowMo: 90 });
   const context = await browser.newContext();
@@ -34,6 +34,7 @@ const expect = require('expect');
   await page.waitForTimeout(5000);
 
   const result = await page.locator('text=What Hope for the Dead?').first().isVisible();
+  await page.screenshot({path: 'SignIn.png', fullPage: true})
   expect(result).toBe(true);
 
   await browser.close();
