@@ -1,3 +1,5 @@
+// -- COMANDOS INICIAIS E INTERAÇÃO BASICA --//
+
 const {chromium} = require('playwright'); // Importa o navegador Chromium do Playwright
 
 (async() => {

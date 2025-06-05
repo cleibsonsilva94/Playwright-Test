@@ -1,3 +1,5 @@
+// -- BOTÕES DA PÁGINA: VOLTAR, AVANÇAR E ATUALIZAR (REFRESH) -- //
+
 const { chromium } = require('playwright');
 const expect = require('expect');
 

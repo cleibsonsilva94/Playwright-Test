@@ -1,3 +1,5 @@
+// -- FORMAS DE CLICAR/INTERAGIR COM ELEMENTOS DA PÁGINA -- //
+
 const {chromium} = require('playwright'); 
 
 (async () => {

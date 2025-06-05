@@ -1,3 +1,5 @@
+// -- EXTRAINDO ELEMENTOS DA PÁGINA -- //
+
 const { chromium } = require('playwright');
 const expect = require('expect');
 

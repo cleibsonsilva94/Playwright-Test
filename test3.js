@@ -1,10 +1,11 @@
+// -- INTERAÇÕES BÁSICAS -- //
+
 const {chromium} = require('playwright');
 
 (async () => {
-    const browser = await chromium.launch({ headless: false, slowMo: 90
- })// Inicia o navegador com interface visível e atraso de 50ms entre ações
-    const context = await browser.newContext();// Cria um novo contexto de navegação isolado
-    const page = await context.newPage();// Abre uma nova aba/página dentro do contexto
+    const browser = await chromium.launch({ headless: false, slowMo: 90 })
+    const context = await browser.newContext();
+    const page = await context.newPage();
 
     await page.goto('https://react-redux.realworld.io/#/login');
 

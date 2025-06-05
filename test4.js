@@ -1,3 +1,5 @@
+// -- EXTRAINDO ELEMENTOS DA PÁGINA -- //
+
 const { chromium } = require('playwright');
 
 (async () => {
@@ -36,11 +38,6 @@ console.log('href: ' + href)
 
 await browser.close() // Fecha o navegador após a execução dos comandos
 })()
-
-
-
-
-
 
 /* Diferença entre os métodos e propriedades utilizados:
 
