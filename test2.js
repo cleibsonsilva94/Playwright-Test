@@ -55,4 +55,4 @@ const {chromium} = require('playwright');
 
     // Fecha o navegador
     await browser.close();
-})();
+})()
