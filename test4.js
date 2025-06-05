@@ -13,7 +13,7 @@ const { chromium } = require('playwright');
 
     await page.waitForTimeout(5000)
 
-    const logoText = await page.$eval('.navbar-brand', el => el.innerText) // Captura o texto visível dentro do elemento com a classe 'navbar-brand'
+const logoText = await page.$eval('.navbar-brand', el => el.innerText) // Captura o texto visível dentro do elemento com a classe 'navbar-brand'
 console.log('logoText: ' + logoText)
 
 const logoHref = await page.$eval('.navbar-brand', el => el.href) // Captura o valor do atributo href do elemento com a classe 'navbar-brand'
