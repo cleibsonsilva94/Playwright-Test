@@ -17,7 +17,9 @@ const expect = require('expect');
 })();
 */
 
+
 // -- CT002 Validating research results and applying many functions -- //
+/*
 (async () => {
   const browser = await chromium.launch({ headless: false, slowMo: 90 });
   const context = await browser.newContext();
@@ -65,3 +67,22 @@ const expect = require('expect');
   await browser.close();
 })();
 */
+
+// -- CT003 Downloading magazine -- //
+
+(async () => {
+  const browser = await chromium.launch({ headless: false, slowMo: 90 });
+  const context = await browser.newContext();
+  const page = await context.newPage();
+
+  await page.goto('https://www.jw.org/en/');
+  await page.fill('input[type="text"]', 'Dead');
+  await page.press('input[type="text"]', 'Enter');
+  await page.waitForTimeout(5000);
+  const magazine = await page.$('text="Is There Hope for the Dead?"');
+  await magazine.click();
+  const magazinePdf = await page.$('//div[@class="digitalPubFormat jsWrittenFormat"]');
+  await magazinePdf.click();
+
+  await browser.close();
+})();
