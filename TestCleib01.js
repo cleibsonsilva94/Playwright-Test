@@ -76,6 +76,7 @@ const expect = require('expect');
   const page = await context.newPage();
 
   await page.goto('https://www.jw.org/en/');
+  await page.waitForLoadState();
   await page.fill('input[type="text"]', 'Dead');
   await page.press('input[type="text"]', 'Enter');
   await page.waitForTimeout(5000);
@@ -83,6 +84,20 @@ const expect = require('expect');
   await magazine.click();
   const magazinePdf = await page.$('//div[@class="digitalPubFormat jsWrittenFormat"]');
   await magazinePdf.click();
-
+  await page.waitForTimeout(3000);
+  const [ download ] = await Promise.all([
+    page.waitForEvent('downloadContent'),
+    page.click('.https://akamd1.jw-cdn.org/sg2/p/0c24b23/1/o/wp_E_20131001.pdf')
+])
   await browser.close();
 })();
+
+  //const [ download ] = await Promise.all([
+   // page.waitForEvent('standardModal-content'), 
+   // page.click('//a[@href="https://akamd1.jw-cdn.org/sg2/p/0c24b23/1/o/wp_E_20131001.pdf"]')
+//])
+
+//const path = await download.path()
+//console.log(path)
+
+//download.saveAs('./download.zip')
