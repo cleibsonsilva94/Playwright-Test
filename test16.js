@@ -9,6 +9,6 @@ const expect = require('expect');
       viewport: { width: 1600, height: 1200 }
   })
   const page = await context.newPage()
-  await page.setViewportSize({ width: 1600, height: 1200 })
-  await page.goto('http://todomvc.com/examples/react/#/')
+  await page.setViewportSize({ width: 2600, height: 2200 })
+  await page.goto('https://www.jw.org/pt/')
 })()
