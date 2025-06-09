@@ -72,32 +72,40 @@ const expect = require('expect');
 
 (async () => {
   const browser = await chromium.launch({ headless: false, slowMo: 90 });
-  const context = await browser.newContext();
-  const page = await context.newPage();
+  const context = await browser.newContext({
+    acceptDownloads: true
+  }); // Garantindo que o contexto faça o download
 
+  const page = await context.newPage();
+  // Interagindo com o pesquisador
   await page.goto('https://www.jw.org/en/');
   await page.waitForLoadState();
   await page.fill('input[type="text"]', 'Dead');
   await page.press('input[type="text"]', 'Enter');
   await page.waitForTimeout(5000);
+  // Escolhendo publicação
   const magazine = await page.$('text="Is There Hope for the Dead?"');
-  await magazine.click();
+  await magazine.click(); 
+  // Clicando para baixar
   const magazinePdf = await page.$('//div[@class="digitalPubFormat jsWrittenFormat"]');
   await magazinePdf.click();
   await page.waitForTimeout(3000);
+
+  // Esperar e capturar o download corretamente
   const [ download ] = await Promise.all([
-    page.waitForEvent('downloadContent'),
+    page.waitForEvent('download'),
     page.click('.fileSize')
-  ])
+  ]);
 
-    const path = await download.path()
-    console.log(path)
-    download.saveAs('./download.pdf')
+  // Salvar o arquivo baixado
+  const downloadPath = await download.path();
+  console.log('Arquivo temporário:', downloadPath); // Salvando em arquivo temporário
 
-    await browser.close()
-  
-  })()
+  await download.saveAs('./downloads/revista.pdf');
+  console.log('Download salvo com sucesso.');
 
+  await browser.close();
+})();
 
   //const [ download ] = await Promise.all([
    // page.waitForEvent('standardModal-content'), 
