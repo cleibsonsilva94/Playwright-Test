@@ -1,6 +1,6 @@
 const { chromium } = require('playwright');
 
-/*(async () => {
+(async () => {
   const browser = await chromium.launch()
   const context = await browser.newContext()
   const page = await context.newPage()
@@ -21,10 +21,11 @@ if (html) {
 }
 await context.storageState({ path: 'state.json' })
   await browser.close()
-})()*/
+})()
 
+/*
 (async () => {
-  const browser = await chromium.launch({ headless: false, slowMo: 50 })
+  const browser = await chromium.launch({ headless: false, slowMo: 90 })
   const context = await browser.newContext({ storageState: 'state.json' })
   const page = await context.newPage()
   
@@ -39,3 +40,4 @@ await context.storageState({ path: 'state.json' })
 
   await browser.close()
 })()
+*/
