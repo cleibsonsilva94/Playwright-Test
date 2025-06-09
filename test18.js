@@ -1,5 +1,6 @@
 // -- RECORDERS - GERAÇÃO DE CÓDIGOS INSTANTÂNEOS COM BASE NA NAVEGAÇÃO (1 FORMA) -- //
 // -- ATENÇÃO COMANDO = npx playwright codegen + URL
+// -- 2 FORMA POR MEIO DO Headless Recorder -- //
 const { chromium } = require('playwright');
 const expect = require('expect');
 
