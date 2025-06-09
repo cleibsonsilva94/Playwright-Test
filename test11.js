@@ -1,35 +1,41 @@
 const { chromium } = require('playwright');
-const expect = require('expect');
 
-(async () => {
+/*(async () => {
   const browser = await chromium.launch()
   const context = await browser.newContext()
   const page = await context.newPage()
   
-  await page.goto('https://react-redux.realworld.io/#/login')
-  await page.fill('input[type = "email"]', 'alanvoigt@yahoo.com.br')
-  await page.press('input[type = "email"]', 'Tab')
-  await page.type('input[type = "password"]', 'test123')
-  await page.click('form >> "Sign in"')
-  const html = await page.innerHTML('.feed-toggle')
-  expect(html).toMatch('Your Feed') 
+  await page.goto('https://www.saucedemo.com/')
+  await page.fill('input[data-test="username"]', 'standard_user')
+  await page.press('input[data-test="username"]', 'Tab')
+  await page.type('input[data-test="password"]', 'secret_sauce')
+  await page.click('form >> "Login"')
+  //const html = await page.innerHTML('.shopping_cart_link')
+  //expect(html).toMatch('shopping_cart_link')
 
-  await context.storageState({ path: 'state.json' })// Salvando as credenciais anteriores dentro desse arquivo. 
-  
+  const html = await page.$('//a[contains(@class, "shopping_cart_link")]')
+if (html) {
+  console.log('✅ Você está na home!')
+} else {
+  console.error('❌ Você não está na home')
+}
+await context.storageState({ path: 'state.json' })
   await browser.close()
-})()
-
-/*
-const { chromium } = require('playwright');
-const expect = require('expect');
+})()*/
 
 (async () => {
-  const browser = await chromium.launch()
+  const browser = await chromium.launch({ headless: false, slowMo: 50 })
   const context = await browser.newContext({ storageState: 'state.json' })
   const page = await context.newPage()
   
-  await page.goto('https://react-redux.realworld.io/#/')
-  const html = await page.innerHTML('.feed-toggle')
-  expect(html).toMatch('Your Feed')
+  await page.goto('https://www.saucedemo.com/')
+  const html = await page.$('//a[contains(@class, "shopping_cart_link")]')
+  //expect(html).toMatch('Your Feed')
+  if (html) {
+    console.log('✅ Você está na home!')
+  } else {
+    console.error('❌ Você não está na home')
+  }
+
   await browser.close()
-})() */
+})()
