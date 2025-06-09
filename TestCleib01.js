@@ -87,10 +87,17 @@ const expect = require('expect');
   await page.waitForTimeout(3000);
   const [ download ] = await Promise.all([
     page.waitForEvent('downloadContent'),
-    page.click('.https://akamd1.jw-cdn.org/sg2/p/0c24b23/1/o/wp_E_20131001.pdf')
-])
-  await browser.close();
-})();
+    page.click('.fileSize')
+  ])
+
+    const path = await download.path()
+    console.log(path)
+    download.saveAs('./download.pdf')
+
+    await browser.close()
+  
+  })()
+
 
   //const [ download ] = await Promise.all([
    // page.waitForEvent('standardModal-content'), 
