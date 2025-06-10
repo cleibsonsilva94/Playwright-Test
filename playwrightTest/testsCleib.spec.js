@@ -1,31 +1,41 @@
 const { test, expect } = require('@playwright/test');
 
 test.beforeEach(async ({ page }) => {
-    await page.goto('https://www.jw.org/en/')
-});
-
-test.describe('Grupo B JW', () => {
+    await page.goto('https://www.saucedemo.com/', { timeout: 60000 });  // 60s
+  });
+  
+test.describe('JW Research', () => {
 
     test('Downloading magazine', async ({ page }) => {
-        await page.fill('input[type="text"]', 'Dead');
-        await page.press('input[type="text"]', 'Enter');
-        await page.waitForTimeout(5000);
-        const magazine = await page.$('text="Is There Hope for the Dead?"');
-        await magazine.click();
-        const magazinePdf = await page.$('//div[@class="digitalPubFormat jsWrittenFormat"]');
-        await magazinePdf.click();
-        await page.waitForTimeout(3000);
+        await page.goto('https://www.saucedemo.com/');
+    await page.locator('[data-test="username"]').click();
+    await page.locator('[data-test="login-credentials"]').click();
+    await page.locator('[data-test="username"]').click();
+    await page.locator('[data-test="username"]').fill('standard_user');
+    await page.locator('[data-test="password"]').click();
+    await page.locator('[data-test="password"]').fill('secret_souce');
+    await page.locator('[data-test="login-button"]').click();
+    await page.locator('[data-test="password"]').click();
+    await page.locator('[data-test="password"]').fill('secret_sauce');
+    await page.locator('[data-test="login-button"]').click();
+    await page.locator('[data-test="add-to-cart-sauce-labs-backpack"]').click();
+    await page.locator('[data-test="add-to-cart-sauce-labs-bike-light"]').click();
+    await page.locator('[data-test="add-to-cart-sauce-labs-bolt-t-shirt"]').click();
+    await page.locator('[data-test="add-to-cart-sauce-labs-fleece-jacket"]').click();
+    await page.locator('[data-test="shopping-cart-link"]').click();
+    await page.locator('[data-test="remove-sauce-labs-backpack"]').click();
+    await page.locator('[data-test="remove-sauce-labs-bolt-t-shirt"]').click();
+    await page.locator('[data-test="remove-sauce-labs-fleece-jacket"]').click();
+    await page.locator('[data-test="remove-sauce-labs-bike-light"]').click();
+    await page.locator('[data-test="continue-shopping"]').click();
     });
 });
 
-test.describe('Grupo C JW Donations', () => {
-    // Outro teste de login (sem captura de tela)
+test.describe('JW Donations', () => {
+
     test('Donations', async ({ page }) => {
-        await page.goto('https://www.jw.org/en/');
-        const page1Promise = page.waitForEvent('popup');
         await page.getByRole('link', { name: 'Donations (opens new window)' }).click();
         const page1 = await page1Promise;
-        await page1.goto('https://donate.jw.org/en/BRA/home');
         await page1.getByRole('link', { name: 'Your Congregation' }).click();
         await page1.getByRole('button', { name: 'Find Your Congregation' }).click();
         await page1.getByRole('combobox', { name: 'Congregation' }).click();
