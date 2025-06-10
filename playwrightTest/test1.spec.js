@@ -1,13 +1,28 @@
 const { test, expect } = require('@playwright/test');
+// -- COMANDOS ÚTEIS PARA EXECUÇÃO DE TESTES COM PLAYWRIGHT -- //
 
-//-- COMANDOS ÚTEIS PARA EXECUÇÃO DE TESTES COM PLAYWRIGHT --//
-// Executa todos os testes // npx playwright test
-// Executa os testes com o navegador visível // npx playwright test --headed
-// Executa os testes com o navegador visível e filtrando pelo nome do teste // // Exemplo: npx playwright test -g "basic test"
-// Executa os testes no navegador WebKit // // npx playwright test --headed --browser=webkit
-// Executa os testes com todos os navegadores //  npx playwright test --headed --browser=all
-// Obs: use `test.only` para executar apenas este teste
-// ou `test.skip` para pular sua execução.
+// Executa todos os testes
+// npx playwright test testsCleib.spec.js
+
+// Executa todos os testes com o navegador visível (headed)
+// npx playwright test --headed
+
+// Executa os testes com navegador visível filtrando pelo nome do teste
+// Exemplo: npx playwright test -g "basic test" --headed
+// Ou:     npx playwright test -g "Downloading magazine" --headed
+
+// Executa os testes no navegador WebKit com navegador visível
+// npx playwright test --headed --browser=webkit
+
+// Executa os testes com todos os navegadores (Chromium, Firefox, WebKit) visíveis
+// npx playwright test --headed --browser=all
+
+// Executa testes de um grupo específico pelo nome do grupo
+// npx playwright test -g "Grupo A"
+
+// Dicas para testes específicos:
+// - Use `test.only` para executar apenas um teste específico dentro do código
+// - Use `test.skip` para pular a execução de um teste específico
 
 test.beforeEach(async ({ page }) => { // Executa antes de cada teste. Aqui é onde preparamos o ambiente de teste.
     await page.goto('https://react-redux.realworld.io/#/login');
