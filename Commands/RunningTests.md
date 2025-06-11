@@ -1,6 +1,6 @@
 # 📘 Comandos úteis para execução de testes com Playwright
 
-Este guia foi criado para ajudar na execução de testes automatizados utilizando o [Playwright](https://playwright.dev/). Abaixo estão listados os principais comandos e dicas práticas para facilitar seu dia a dia com os testes.
+Este guia foi criado para ajudar na execução de testes automatizados utilizando o [Playwright](https://playwright.dev/). Abaixo estão listados os principais comandos e dicas práticas para facilitar seu dia a dia com os testes :) 
 
 ## ✅ Executando os testes
 
