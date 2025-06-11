@@ -1,3 +1,8 @@
+// -- TESTES RELACIONADOS A ABAS DISTINTAS DE TRABALHO -- // 
+// -- COMANDO npx playwright test TestParalelismoVersion3
+// -- npx playwright test TestParalelismoVersion3/testParalelismo.spec.js -g "basic test" --// Rodando teste especifico. 
+
+
 const { test, expect } = require('@playwright/test');
 
 test.beforeEach(async ({ page }) => {

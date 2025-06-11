@@ -1,7 +1,7 @@
 # Test info
 
 - Name: basic test
-- Location: C:\Users\CLELIMA\Documents\CDG_Test\TestParalelismoVersion3\testParalelismo.spec.js:8:1
+- Location: C:\Users\CLELIMA\Documents\CDG_Test\TestParalelismoVersion3\testParalelismo.spec.js:13:1
 
 # Error details
 
@@ -10,7 +10,7 @@ Error: page.fill: Test timeout of 30000ms exceeded.
 Call log:
   - waiting for locator('input[type = "email"]')
 
-    at C:\Users\CLELIMA\Documents\CDG_Test\TestParalelismoVersion3\testParalelismo.spec.js:10:16
+    at C:\Users\CLELIMA\Documents\CDG_Test\TestParalelismoVersion3\testParalelismo.spec.js:15:16
 ```
 
 # Page snapshot
@@ -45,21 +45,26 @@ Call log:
 # Test source
 
 ```ts
-   1 | const { test, expect } = require('@playwright/test');
-   2 |
-   3 | test.beforeEach(async ({ page }) => {
-   4 |     await page.goto('https://react-redux.realworld.io')
-   5 |     console.log('worker: ' + process.env.TEST_WORKER_INDEX)
-   6 | })
+   1 | // -- TESTES RELACIONADOS A ABAS DISTINTAS DE TRABALHO -- // 
+   2 | // -- COMANDO npx playwright test TestParalelismoVersion3
+   3 | // -- npx playwright test TestParalelismoVersion3/testParalelismo.spec.js -g "basic test" --// Rodando teste especifico. 
+   4 |
+   5 |
+   6 | const { test, expect } = require('@playwright/test');
    7 |
-   8 | test('basic test', async ({ page }) => {
-   9 |     await expect(page).toHaveTitle('Conduit')
-> 10 |     await page.fill('input[type = "email"]', 'alanvoigt@yahoo.com.br')
+   8 | test.beforeEach(async ({ page }) => {
+   9 |     await page.goto('https://react-redux.realworld.io')
+  10 |     console.log('worker: ' + process.env.TEST_WORKER_INDEX)
+  11 | })
+  12 |
+  13 | test('basic test', async ({ page }) => {
+  14 |     await expect(page).toHaveTitle('Conduit')
+> 15 |     await page.fill('input[type = "email"]', 'alanvoigt@yahoo.com.br')
      |                ^ Error: page.fill: Test timeout of 30000ms exceeded.
-  11 |     await page.press('input[type = "email"]', 'Tab')
-  12 |     await page.type('input[type = "password"]', 'test123')
-  13 |     await page.click('form >> "Sign in"')
-  14 |     const locator = page.locator('.navbar-brand');
-  15 |     await expect(locator).toContainText('conduit', { timeout: 30000 });
-  16 | }) 
+  16 |     await page.press('input[type = "email"]', 'Tab')
+  17 |     await page.type('input[type = "password"]', 'test123')
+  18 |     await page.click('form >> "Sign in"')
+  19 |     const locator = page.locator('.navbar-brand');
+  20 |     await expect(locator).toContainText('conduit', { timeout: 30000 });
+  21 | }) 
 ```
