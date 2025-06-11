@@ -1,4 +1,5 @@
 // -- COMANDOS INICIAIS E INTERAÇÃO BASICA --//
+// Rodar: node test.js
 
 const {chromium} = require('playwright'); // Importa o navegador Chromium do Playwright
 
