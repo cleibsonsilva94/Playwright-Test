@@ -1,17 +1,14 @@
 const config = {
   use: {
-    baseURL: 'https://www.saucedemo.com/',
-    // browserName: 'webkit',
-    headless: false,
     // viewport: { width: 1280, height: 720 },
     launchOptions: {
       slowMo: 50,
     },
-    screenshot: 'on', // 'on', 'off', 'only-on-failure'
+    screenshot: 'only-on-failure', // 'on', 'off', 'only-on-failure'
     video: 'on', // 'on', 'off', 'retain-on-failure', 'on-first-retry'
     trace: 'on', // 'on', 'off', 'retain-on-failure', 'on-first-retry'
   },
-  testDir: 'tests',
+  testDir: 'playwrightTest',
   retries: 2,
   timeout: 60000,
   projects: [
