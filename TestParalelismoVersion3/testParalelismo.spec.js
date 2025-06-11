@@ -1,7 +1,7 @@
 const { test, expect } = require('@playwright/test');
 
 test.beforeEach(async ({ page }) => {
-    await page.goto('/#/login')
+    await page.goto('https://react-redux.realworld.io')
     console.log('worker: ' + process.env.TEST_WORKER_INDEX)
 })
 
@@ -13,4 +13,4 @@ test('basic test', async ({ page }) => {
     await page.click('form >> "Sign in"')
     const locator = page.locator('.navbar-brand');
     await expect(locator).toContainText('conduit', { timeout: 30000 });
-})
+}) 
