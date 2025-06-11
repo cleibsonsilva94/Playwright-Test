@@ -1,28 +1,48 @@
 const { test, expect } = require('@playwright/test');
 // -- COMANDOS ÚTEIS PARA EXECUÇÃO DE TESTES COM PLAYWRIGHT -- //
 
-// Executa todos os testes
-// npx playwright test testsCleib.spec.js
+// ------------------------------------------------------------
+// Executa todos os testes com o navegador visível (modo headed)
+// ------------------------------------------------------------
+//npx playwright test --headed
 
-// Executa todos os testes com o navegador visível (headed)
-// npx playwright test --headed
+// Executa todos os testes do arquivo com navegador visível
+// (o arquivo atual, se o comando for executado dentro da pasta)
+//npx playwright test --headed 
 
+// ------------------------------------------------------------
+// Executa todos os testes de um arquivo específico
+// ------------------------------------------------------------
+//px playwright test testsCleib.spec.js
+
+// ------------------------------------------------------------
 // Executa os testes com navegador visível filtrando pelo nome do teste
-// Exemplo: npx playwright test -g "basic test" --headed
-// Ou:     npx playwright test -g "Downloading magazine" --headed
+// ------------------------------------------------------------
+// Exemplo:
+//npx playwright test -g "basic test" --headed
+//npx playwright test -g "Downloading magazine" --headed
 
-// Executa os testes no navegador WebKit com navegador visível
-// npx playwright test --headed --browser=webkit
-
-// Executa os testes com todos os navegadores (Chromium, Firefox, WebKit) visíveis
-// npx playwright test --headed --browser=all
-
+// ------------------------------------------------------------
 // Executa testes de um grupo específico pelo nome do grupo
-// npx playwright test -g "Grupo A"
+// ------------------------------------------------------------
+//npx playwright test -g "Grupo A"
 
-// Dicas para testes específicos:
-// - Use `test.only` para executar apenas um teste específico dentro do código
+// ------------------------------------------------------------
+// Executa os testes no navegador WebKit com navegador visível
+// ------------------------------------------------------------
+//npx playwright test --headed --browser=webkit
+
+// ------------------------------------------------------------
+// Executa os testes com todos os navegadores visíveis (Chromium, Firefox, WebKit)
+// ------------------------------------------------------------
+//npx playwright test --headed --browser=all
+
+// ------------------------------------------------------------
+// Dicas úteis dentro do código dos testes:
+// ------------------------------------------------------------
+// - Use `test.only` para executar apenas um teste específico
 // - Use `test.skip` para pular a execução de um teste específico
+
 
 test.beforeEach(async ({ page }) => { // Executa antes de cada teste. Aqui é onde preparamos o ambiente de teste.
     await page.goto('https://react-redux.realworld.io/#/login');
