@@ -14,7 +14,7 @@ const config = {
   retries: 2,
   timeout: 60000,
   // workers: 1, // To disable Parallelism 
-  workers: 4 // Parallelism | To limit the number of worker processes to 4
+  workers: 3 // Parallelism | To limit the number of worker processes to 4
 }
 
 module.exports = config

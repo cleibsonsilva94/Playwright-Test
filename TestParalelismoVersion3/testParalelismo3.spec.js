@@ -1,7 +1,7 @@
 const { test, expect } = require('@playwright/test');
 
 test.beforeEach(async ({ page }) => {
-    await page.goto('https://react-redux.realworld.io')
+    await page.goto('https://react-redux.realworld.io/#/login?_k=gi4r1c')
     console.log('worker: ' + process.env.TEST_WORKER_INDEX)
 })
 
