@@ -1,17 +1,19 @@
+// -- PRIMEIRO EXEMPLO DE TESTES COM JEST E PLAYWRIGHT JUNTOS -- //
+
 const { chromium } = require('playwright');
 
-describe('Post', () => {
+describe('Post', () => { // Suite de testes
   let browser;
   let context;
   let page;
 
-  beforeAll(async () => {
-    browser = await chromium.launch({ headless: true }); // navegador visível
+  beforeAll(async () => { // Configuração do navegador e da página
+    browser = await chromium.launch({ headless: true });
     context = await browser.newContext();
     page = await context.newPage();
   });
 
-  afterAll(async () => {
+  afterAll(async () => { // Fechamento do navegador após os testes
     await browser.close();
   });
 
