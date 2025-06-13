@@ -1,12 +1,19 @@
-class login {
-    async email() {
-        return await page.$('input[type="email"]')
+class Login {
+    constructor(page) {
+        this.page = page;
     }
-    async password_fill(test) {
-        return await page.type('input[type = "password"]', test)
+
+    async User() {
+        return await this.page.$('input[id="user-name"]');
     }
+
+    async password_fill(password) {
+        await this.page.type('input[type="password"]', password);
+    }
+
     async signInButton_click() {
-        return await page.click("form >> 'Sign in'")
+        await this.page.click("input[name='login-button']");
     }
 }
-module.exports = login
+
+module.exports = Login;
