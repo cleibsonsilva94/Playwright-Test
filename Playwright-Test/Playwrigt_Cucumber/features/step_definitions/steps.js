@@ -14,7 +14,7 @@ let page;
 
 // Abrir o navegador antes de todos os testes
 BeforeAll(async () => {
-    browser = await chromium.launch();
+    browser = await chromium.launch({ headless: false })
     context = await browser.newContext();
     page = await context.newPage();
 });
@@ -41,7 +41,9 @@ When('I click on Login button', async () => {
 });
 
  //Verificar se a página contém o texto esperado
-Then('The page should display {string}', async (string) => {
-   const content = await page.innerText('.Products');
-    //expect(content).toMatch(string);
-});
+ Then('The page should display {string}', async (string) => {
+    const content = await page.innerText('[data-test="title"]');
+    if (!content.includes(string)) {
+        throw new Error(`Expected text to include "${string}", but got "${content}"`);
+    }
+})
