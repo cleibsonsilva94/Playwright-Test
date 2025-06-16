@@ -12,3 +12,4 @@ const {chromium} = require('playwright'); // Importa o navegador Chromium do Pla
     await page.screenshot({path: `todo.png`}) // Tira um screenshot da página e salva com o nome "todo.png"
     await browser.close() // Fecha o navegador após a execução
 })()
+//Test
