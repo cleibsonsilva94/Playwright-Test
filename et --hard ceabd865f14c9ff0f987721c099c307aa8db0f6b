@@ -1,0 +1,431 @@
+[33mcommit 32f05e1d3f1fb15101cb5cd8afed1835d6b59cab[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Cleibson Silva <cleibsonslima@gmail.com>
+Date:   Mon Jun 16 08:44:29 2025 -0300
+
+    Teste
+
+[33mcommit 23cad37024c1146d42a696e4d9c0e47fbf50d6a8[m
+Author: Cleibson Silva <cleibsonslima@gmail.com>
+Date:   Fri Jun 13 16:49:41 2025 -0300
+
+    Git init
+
+[33mcommit 4f749d69100a503a0f53c5e81a2f0f40f83ebcc8[m
+Author: Cleibson Silva <cleibsonslima@gmail.com>
+Date:   Fri Jun 13 16:33:29 2025 -0300
+
+    git init
+
+[33mcommit bde32406190364756985d3f29dad6bdc5db8b4aa[m
+Author: Cleibson Silva <cleibsonslima@gmail.com>
+Date:   Fri Jun 13 16:13:25 2025 -0300
+
+    Adding Pre-Cucumber
+
+[33mcommit 6330983a3881c270c7d873ad873ef594e6ea83cd[m
+Author: Cleibson Silva <cleibsonslima@gmail.com>
+Date:   Fri Jun 13 16:12:29 2025 -0300
+
+    Adding Pre-Cucumber
+
+[33mcommit ceabd865f14c9ff0f987721c099c307aa8db0f6b[m
+Author: Cleibson Silva <cleibsonslima@gmail.com>
+Date:   Fri Jun 13 16:00:53 2025 -0300
+
+    Adding test (TC02) with PageObject application and including test (TC01) exporting data (Variables) from another separate file.
+
+[33mcommit 01248205ccfa1b80a62aefd9b0869ba188cdfcc2[m
+Author: Cleibson Silva <cleibsonslima@gmail.com>
+Date:   Fri Jun 13 12:12:51 2025 -0300
+
+    Adding PagObjects version 1
+
+[33mcommit 549646dec153a68b24d8c480c4692799bd741640[m
+Author: Cleibson Silva <cleibsonslima@gmail.com>
+Date:   Fri Jun 13 11:50:16 2025 -0300
+
+    Add Readme3
+
+[33mcommit 752088b27d5c4535180e7f28a587aa75da5eb8ab[m
+Author: Cleibson Silva <cleibsonslima@gmail.com>
+Date:   Fri Jun 13 11:48:22 2025 -0300
+
+    Add Readme
+
+[33mcommit 4a99bffb4c15f07777426a79b3fe63116ce28d37[m
+Author: Cleibson Silva <cleibsonslima@gmail.com>
+Date:   Fri Jun 13 11:47:34 2025 -0300
+
+    Add Readme
+
+[33mcommit 95b3554e35997d42f29d1b5537c8deaa29af9f05[m
+Author: Cleibson Silva <cleibsonslima@gmail.com>
+Date:   Fri Jun 13 11:43:19 2025 -0300
+
+    centralizing reusable variables within a single file.
+
+[33mcommit 54144b99832850c94dc1ed9c17cd077b095bdcfc[m
+Author: Cleibson Silva <cleibsonslima@gmail.com>
+Date:   Fri Jun 13 11:37:06 2025 -0300
+
+    Dta json
+
+[33mcommit 413e2dff352559d58708e80ff604f75bbbf6eba1[m
+Author: Cleibson Silva <cleibsonslima@gmail.com>
+Date:   Fri Jun 13 11:06:06 2025 -0300
+
+    Adding report generation code. Jest Reports 1
+
+[33mcommit 671f632ee3cca73afab7c12c4321195eb1018339[m
+Author: Cleibson Silva <cleibsonslima@gmail.com>
+Date:   Fri Jun 13 10:18:43 2025 -0300
+
+    Adding report generation code. Jest Reports
+
+[33mcommit 5d37e29e716ea1b42beb3751a58362341d90cb2f[m
+Author: Cleibson Silva <cleibsonslima@gmail.com>
+Date:   Thu Jun 12 11:41:15 2025 -0300
+
+    Test fix
+
+[33mcommit 488bc777ef28c4b2b5a5bbd29c1386374b29daf9[m
+Author: Cleibson Silva <cleibsonslima@gmail.com>
+Date:   Thu Jun 12 11:30:44 2025 -0300
+
+    Editing settings to add error print
+
+[33mcommit e0412b9a4a883bf062672d3643aaed392dc6770a[m
+Author: Cleibson Silva <cleibsonslima@gmail.com>
+Date:   Thu Jun 12 11:25:15 2025 -0300
+
+    First corrected test 1.2
+
+[33mcommit 0cc97f58e426e3a8e74749149b8b6232f8576e9e[m
+Author: Cleibson Silva <cleibsonslima@gmail.com>
+Date:   Thu Jun 12 10:56:07 2025 -0300
+
+    First corrected test
+
+[33mcommit 1f30675f33eaaeebcf38f47ce0d7f52d129580a2[m
+Author: Cleibson Silva <cleibsonslima@gmail.com>
+Date:   Thu Jun 12 10:23:38 2025 -0300
+
+    Adding comments
+
+[33mcommit 2373bbbf6658174206062bbe9ef35b8ce0ce8359[m
+Author: Cleibson Silva <cleibsonslima@gmail.com>
+Date:   Thu Jun 12 10:19:12 2025 -0300
+
+    first test and inclusion of page creation configuration
+
+[33mcommit 2af363cce16e27c106191a594e9d0415ebc8618d[m
+Author: Cleibson Silva <cleibsonslima@gmail.com>
+Date:   Thu Jun 12 09:33:26 2025 -0300
+
+    Add Jest Tool
+
+[33mcommit 05db78110f24581a1d61f1627158d5b95ac396f1[m
+Author: Cleibson Silva <cleibsonslima@gmail.com>
+Date:   Thu Jun 12 08:10:04 2025 -0300
+
+    Organizing the project to introduce Jest
+
+[33mcommit 63fd2eacd0ab36569b6064b355f405cb5c218a91[m
+Author: Cleibson Silva <cleibsonslima@gmail.com>
+Date:   Wed Jun 11 13:24:46 2025 -0300
+
+    Organization of comments 2
+
+[33mcommit f5bef37c3184d213edd0a78d6d71b939af7faf93[m
+Author: Cleibson Silva <cleibsonslima@gmail.com>
+Date:   Wed Jun 11 13:12:28 2025 -0300
+
+    Organization of comments
+
+[33mcommit e4ecda7b38177d4b5744003ea3a415e7787f8415[m
+Author: Cleibson Silva <cleibsonslima@gmail.com>
+Date:   Wed Jun 11 12:37:20 2025 -0300
+
+    Fixed tests that are examples of parallel executions
+
+[33mcommit 1f169dc65294af6e516e0bf40226fb6b478d3a2e[m
+Author: Cleibson Silva <156372072+cleibsonsilva94@users.noreply.github.com>
+Date:   Wed Jun 11 12:34:55 2025 -0300
+
+    Update RunningTests.md
+
+[33mcommit 1001f7a1c1056e5bd5714265c4dd185af413f24a[m
+Author: Cleibson Silva <156372072+cleibsonsilva94@users.noreply.github.com>
+Date:   Wed Jun 11 12:25:00 2025 -0300
+
+    Create RunningTests.md
+
+[33mcommit c216014c4fbfddde6dc2f15e6ec636bb58a38fad[m
+Author: Cleibson Silva <cleibsonslima@gmail.com>
+Date:   Wed Jun 11 11:57:44 2025 -0300
+
+    Tests with 3 workers part 2
+
+[33mcommit 30e13ca1ae8a275d6d00064d3a4d180cc5aac742[m
+Author: Cleibson Silva <cleibsonslima@gmail.com>
+Date:   Wed Jun 11 11:39:16 2025 -0300
+
+    Tests related to multiple work tabs - Or workers
+
+[33mcommit 68c47217227384995370b9f2709a9b167769215b[m
+Author: Cleibson Silva <cleibsonslima@gmail.com>
+Date:   Wed Jun 11 11:00:05 2025 -0300
+
+    Adding parallelism test
+
+[33mcommit 9a0549f8c4949e220db7aabf934d9d3129cc520f[m
+Author: Cleibson Silva <cleibsonslima@gmail.com>
+Date:   Wed Jun 11 10:59:31 2025 -0300
+
+    Adding parallelism test
+
+[33mcommit 80b40dcc6ee378a4ed573b2d38cf898a16deb920[m
+Author: Cleibson Silva <cleibsonslima@gmail.com>
+Date:   Wed Jun 11 08:19:07 2025 -0300
+
+    Adding general settings for generating videos and prints. Note: It is not working as expected for some unknown reason
+
+[33mcommit 12ee03100b92e88dcf1f3c597b98dbaffa9ed663[m
+Author: Cleibson Silva <cleibsonslima@gmail.com>
+Date:   Tue Jun 10 15:05:36 2025 -0300
+
+    Fixing the executor filter
+
+[33mcommit f3545eb0f0e80eeac750d8b74d25f1b07c1a58cf[m
+Author: Cleibson Silva <cleibsonslima@gmail.com>
+Date:   Tue Jun 10 12:01:44 2025 -0300
+
+    Adding your own tests using @playwright/test. Note: The second test was created using the recording robot.
+
+[33mcommit f2d960e8e5c2690abb0e135479b77d476bbd91df[m
+Author: Cleibson Silva <cleibsonslima@gmail.com>
+Date:   Tue Jun 10 11:47:44 2025 -0300
+
+    Including explanation of commands
+
+[33mcommit 55b8a29c3437916eb03ffc36ccd34a05e9f4e8a2[m
+Author: Cleibson Silva <cleibsonslima@gmail.com>
+Date:   Tue Jun 10 11:11:28 2025 -0300
+
+    Organizing the comments
+
+[33mcommit 9c8c4564fb6df7b553313106caab99a11922431c[m
+Author: Cleibson Silva <cleibsonslima@gmail.com>
+Date:   Tue Jun 10 11:04:59 2025 -0300
+
+    Explaining concepts
+
+[33mcommit a0bd732e269ed1e165c2660183e10484d1250854[m
+Author: Cleibson Silva <cleibsonslima@gmail.com>
+Date:   Tue Jun 10 09:58:44 2025 -0300
+
+    Reorganizing the project
+
+[33mcommit 84da1e187bda7118c2efd0f9114f741e95078606[m
+Author: Cleibson Silva <cleibsonslima@gmail.com>
+Date:   Mon Jun 9 17:18:54 2025 -0300
+
+    Headless Recorder
+
+[33mcommit 9e820c850357adc7de4a393a677db611e54afc25[m
+Author: Cleibson Silva <cleibsonslima@gmail.com>
+Date:   Mon Jun 9 17:11:28 2025 -0300
+
+    Adding test and automatic test code creation command
+
+[33mcommit 024374f2b0b2e39b0ca383501085e1cc7f710716[m
+Author: Cleibson Silva <cleibsonslima@gmail.com>
+Date:   Mon Jun 9 16:39:24 2025 -0300
+
+    PDF generation test. Ideal for generating reports
+
+[33mcommit 714955c141a17fdb6d421e9743c90d4cc783f9ee[m
+Author: Cleibson Silva <cleibsonslima@gmail.com>
+Date:   Mon Jun 9 16:06:24 2025 -0300
+
+    Adding a working website to the resolution test
+
+[33mcommit 720259df32268c7bf3638f43aa47e8297faf40df[m
+Author: Cleibson Silva <cleibsonslima@gmail.com>
+Date:   Mon Jun 9 16:04:11 2025 -0300
+
+    Adding window size/resolution test
+
+[33mcommit 3af857a3ed2242b3b2feeb89ea03ad5aed57da09[m
+Author: Cleibson Silva <cleibsonslima@gmail.com>
+Date:   Mon Jun 9 16:01:45 2025 -0300
+
+    Adding time zone test
+
+[33mcommit cb3497279aec7ee9d5e4daba5831f7692e46caa8[m
+Author: Cleibson Silva <cleibsonslima@gmail.com>
+Date:   Mon Jun 9 15:56:02 2025 -0300
+
+    Adding Geolocation Test
+
+[33mcommit b056eb17dfb2ccc34ed82330a23d74be515483fc[m
+Author: Cleibson Silva <cleibsonslima@gmail.com>
+Date:   Mon Jun 9 15:44:04 2025 -0300
+
+    Adding a way to do mobile testing, like an emulator
+
+[33mcommit 202fc83697f62883ddaea60a8a5f1b7d95466ed5[m
+Author: Cleibson Silva <cleibsonslima@gmail.com>
+Date:   Mon Jun 9 15:18:11 2025 -0300
+
+    Adding main ways to handle dialogs
+
+[33mcommit 2c020fa4ce1b549a7e3e3925077cb05e6388d396[m
+Author: Cleibson Silva <cleibsonslima@gmail.com>
+Date:   Mon Jun 9 11:49:25 2025 -0300
+
+    'Save credentials' test not working 2nd part. Just first one to create encrypted file with saved credentials.
+
+[33mcommit 38e0c062ce6698d8d2454e5da39c6f584b6accf5[m
+Author: Cleibson Silva <cleibsonslima@gmail.com>
+Date:   Mon Jun 9 11:35:31 2025 -0300
+
+    Adding replicated credential tests in saucedemo. Still not working
+
+[33mcommit a75072eaed01bd6d9f6d051aad2b138c2446e18b[m
+Author: Cleibson Silva <cleibsonslima@gmail.com>
+Date:   Mon Jun 9 10:02:38 2025 -0300
+
+    Saving credentials - first version
+
+[33mcommit 6d2f02062ff7754ddbbae434038cee9456e8f15c[m
+Author: Cleibson Silva <cleibsonslima@gmail.com>
+Date:   Mon Jun 9 09:50:26 2025 -0300
+
+    Magazine download test ready. In the future add 'if' as a validator since 'Expected' does not work
+
+[33mcommit fbda87363edda13aa018a40ff994805a63986390[m
+Author: Cleibson Silva <cleibsonslima@gmail.com>
+Date:   Mon Jun 9 09:33:17 2025 -0300
+
+    Clicking the download button
+
+[33mcommit e892b25bc5f34ff1e0a97dc8be2706301a51f907[m
+Author: Cleibson Silva <cleibsonslima@gmail.com>
+Date:   Fri Jun 6 15:55:22 2025 -0300
+
+    Trying to download magazine to apply lesson 10
+
+[33mcommit 6dc18629d7a7de5a14c095e4302510f72f54689b[m
+Author: Cleibson Silva <cleibsonslima@gmail.com>
+Date:   Fri Jun 6 11:14:14 2025 -0300
+
+    Clicking on card
+
+[33mcommit 1bdaa6f62d303e5245856beff2f8f9f212c0b15f[m
+Author: Cleibson Silva <cleibsonslima@gmail.com>
+Date:   Thu Jun 5 15:46:46 2025 -0300
+
+    How to download files and send files
+
+[33mcommit 2b05c46c182d91e4207ec3ddffb655b1c730cace[m
+Author: Cleibson Silva <cleibsonslima@gmail.com>
+Date:   Thu Jun 5 15:34:02 2025 -0300
+
+    Completing code for multiple pages and users
+
+[33mcommit 2a87d1d6ef8c322a266ceb7108535bf15f6d8cf2[m
+Author: Cleibson Silva <cleibsonslima@gmail.com>
+Date:   Thu Jun 5 15:07:31 2025 -0300
+
+    Opening a second page and capturing its titles
+
+[33mcommit 5f9abbb18d138673f0a2b60690ff7d3f7ec6b06f[m
+Author: Cleibson Silva <cleibsonslima@gmail.com>
+Date:   Thu Jun 5 14:35:49 2025 -0300
+
+    Add description at the beginning of each class
+
+[33mcommit 50a3b78d602b2a959610753fee823013866c13c2[m
+Author: Cleibson Silva <cleibsonslima@gmail.com>
+Date:   Thu Jun 5 12:00:09 2025 -0300
+
+    Adding 6 common user interactions to the class, such as reloading the page, going to the front page or returning, reloading the page. Applying these techniques to tests created by me
+
+[33mcommit f5815e3fd566902360095f9e7cfa67c24b0af4bc[m
+Author: Cleibson Silva <cleibsonslima@gmail.com>
+Date:   Thu Jun 5 11:37:11 2025 -0300
+
+    Formatting
+
+[33mcommit 5df7ab41b32de61770d0fac211ed24ec8cb676ac[m
+Author: Cleibson Silva <cleibsonslima@gmail.com>
+Date:   Thu Jun 5 10:44:38 2025 -0300
+
+    Addition of test that validates search result (CT02) both by expected and by if
+
+[33mcommit 183c2d0b6b989a57d4954459f834e4729e8465c2[m
+Author: Cleibson Silva <cleibsonslima@gmail.com>
+Date:   Thu Jun 5 09:02:04 2025 -0300
+
+    Separation of teacher (Test) and my (TestCleib) codes
+
+[33mcommit 4d38f5770ae26c4d25039e91724ce1b08324dde4[m
+Author: Cleibson Silva <cleibsonslima@gmail.com>
+Date:   Thu Jun 5 08:53:55 2025 -0300
+
+    Expect
+
+[33mcommit b7770cfa7610de6a3586f2912f4e6e2dc49d9ee4[m
+Author: Lima <clelima@deloitte.com>
+Date:   Thu Jun 5 08:43:25 2025 -0300
+
+    Formatting line 58
+
+[33mcommit 349f446cc6f16e063da2df0bf6750897cbac8713[m
+Author: Lima <clelima@deloitte.com>
+Date:   Thu Jun 5 08:35:54 2025 -0300
+
+    Formatting
+
+[33mcommit 05126a009fdda78c72280d357a7e767c692f6ec5[m
+Author: Lima <clelima@deloitte.com>
+Date:   Wed Jun 4 17:22:42 2025 -0300
+
+    Adding descriptive comments and explanations about functions
+
+[33mcommit b56fa1546c4245ef01edd040dea99bc194fbbb0d[m
+Author: Lima <clelima@deloitte.com>
+Date:   Wed Jun 4 17:07:35 2025 -0300
+
+    Adding test 4 with page element extraction
+
+[33mcommit f5140249215e817ef734df16aee18d63603d69ad[m
+Author: Lima <clelima@deloitte.com>
+Date:   Wed Jun 4 16:22:53 2025 -0300
+
+    Adding test 2 with explanation of interactions and test 3 with interaction on another site
+
+[33mcommit 42a4126ad0e87f16c14244f704d99ab6215c5ea7[m
+Author: Lima <clelima@deloitte.com>
+Date:   Wed Jun 4 15:58:09 2025 -0300
+
+    Adding test 3 with element interactions
+
+[33mcommit 14652fb2d63e8c2ec1c9be740d905397636bf8bc[m
+Author: Lima <clelima@deloitte.com>
+Date:   Wed Jun 4 14:57:00 2025 -0300
+
+    Adding Pomodoro Url
+
+[33mcommit d172e51ed5310f01cc0e48cf0dd64baaa90b0b73[m
+Author: Lima <clelima@deloitte.com>
+Date:   Wed Jun 4 12:15:07 2025 -0300
+
+    Test 2
+
+[33mcommit c6191736bcae54b65fe0603adcb3739544c67f30[m
+Author: Lima <clelima@deloitte.com>
+Date:   Wed Jun 4 11:48:48 2025 -0300
+
+    Test 1 and 2
