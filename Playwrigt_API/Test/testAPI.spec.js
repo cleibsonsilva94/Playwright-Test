@@ -6,7 +6,7 @@ test('Deve retornar os dados corretos do usuário com id 2', async ({ request })
 
   const user = responseBody.data;
 
-  console.log(user); // Opcional, para visualizar a resposta no terminal
+  console.log(user);
 
   expect(response.status()).toBe(200);
   expect(user.id).toBe(2);
