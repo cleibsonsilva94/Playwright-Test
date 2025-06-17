@@ -8,7 +8,7 @@ test('basic test', async () => {
 
     await page.goto('https://www.saucedemo.com/')
 
-    await page.fill('input[id="user-name"]', 'standard_user')
+    await page.fill('input[id="user-name"]', 'visual_user')
     await page.press('input[id="user-name"]', 'Tab')
     await page.type('input[type = "password"]', 'secret_sauce')
     await page.press('input[type="text"]', 'Enter');
