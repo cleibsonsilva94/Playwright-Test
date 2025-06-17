@@ -2,7 +2,7 @@ const { chromium, webkit, firefox } = require('playwright');//Adicionando os nav
 
 (async () => {
     for (const browserType of [chromium, webkit, firefox]){//Adicionando uma variavel ao navegador. 
-        const browser = await browserType.launch() //Usando a variavel criada.
+        const browser = await browserType.launch({ headless: false }) //Usando a variavel criada.
         const context = await browser.newContext()
         const page = await context.newPage()
         await page.goto('https://react-redux.realworld.io/#/login')
