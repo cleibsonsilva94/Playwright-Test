@@ -1,3 +1,5 @@
+// Comando para rodar npx playwright test --grep "@Simple basic test 2 Login" --headed
+
 import { test, expect } from '@playwright/test';
 
 test('@Simple basic test', async ({ page }) => {
